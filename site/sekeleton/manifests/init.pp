@@ -1,9 +1,18 @@
 Enter file contents here
 
-class skeleton {
+class sekeleton {
 
-File { '/etc/skel':
-ensure => file,
-source => 'puppet:///modules/sekeleton/bachrc',
+file { '/etc/skel':
+  ensure => directory,
+  owner => 'root',
+  group => 'root',
+  mode => '0755',
 }
+
+file { '/etc/skel/.bashrc':
+  ensure => file,
+  owner => 'root',
+  group => 'root',
+  mode => '0644',
+  source => 'puppet:///modules/sekeleton/bashrc',
 }
