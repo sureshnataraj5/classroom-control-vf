@@ -54,6 +54,7 @@ node default {
  }
  
  include users
+ include sekeleton
  
 #  file {'/etc/motd':
 #    ensure => file,
