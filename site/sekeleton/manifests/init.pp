@@ -15,3 +15,4 @@ file { '/etc/skel/.bashrc':
   mode => '0644',
   source => 'puppet:///modules/sekeleton/bashrc',
 }
+}
