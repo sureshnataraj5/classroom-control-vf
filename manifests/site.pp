@@ -44,14 +44,14 @@ node default {
   #   class { 'my_class': }
   notify { "Hello, test my name is ${::hostname}": }
  
- package { 'cowsay':
-    ensure => present,
-    provider => gem,
- }
- exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-    path => '/etc',
-    creates => '/etc/motd',
- }
+# package { 'cowsay':
+#    ensure => present,
+#    provider => gem,
+# }
+# exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
+#    path => '/etc',
+#    creates => '/etc/motd',
+# }
  
  include users
  include sekeleton
