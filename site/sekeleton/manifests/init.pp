@@ -1,4 +1,3 @@
-Enter file contents here
 
 class sekeleton {
 
