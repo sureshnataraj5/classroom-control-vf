@@ -53,8 +53,8 @@ node default {
 #    creates => '/etc/motd',
 # }
  
- include users
- include sekeleton
+# include users
+# include sekeleton
  
 #  file {'/etc/motd':
 #    ensure => file,
