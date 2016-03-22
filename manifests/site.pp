@@ -45,7 +45,7 @@ node default {
   notify { "Hello, test my name is ${::hostname}": }
  
  exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd":
-    ensure => '/etc',
+    path => '/etc',
     creates => '/etc/motd'
     
  }
