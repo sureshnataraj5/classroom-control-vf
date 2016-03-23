@@ -1,6 +1,6 @@
-class ngnix{
+class nginx{
   
-  package { 'ngnix':
+  package { 'nginx':
       ensure => present,
   }
   
