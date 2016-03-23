@@ -43,7 +43,10 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "Hello, test my name is ${::hostname}": }
- 
+  
+ if $::is_virtual {
+     notify {"Virtual Machine of type ${::virtual}":}
+ }
 # package { 'cowsay':
 #    ensure => present,
 #    provider => gem,
