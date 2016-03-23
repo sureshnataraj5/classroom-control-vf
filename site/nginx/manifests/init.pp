@@ -29,7 +29,7 @@ class nginx{
     require => Package['nginx'],
   }
   
-  file { '/etc/ngnix/conf.d/default.conf':
+  file { '/etc/nginx/conf.d/default.conf':
   ensure => file,
     owner => 'root',
     group => 'root',
@@ -43,5 +43,4 @@ class nginx{
     ensure => running,
     enable => true,
   }
-  
 }
